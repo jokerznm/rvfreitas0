@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kalam', cursive;
+
+}
+
+body{
+    background-color: #0a0a0afb;
+    color: #fff;
+    
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: rgb(207, 178, 13);
+
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #0a0a0afb;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover, .navbar a.active{
+        color: rgb(207, 178, 13);
+}
+
+
+.home {
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h1{
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.home-content h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #0a0a0afb;
+    animation: showRight 1s ease forwards;
+    animation-delay: .1s;
+
+}
+
+.home content h3{
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(207, 178, 13);
+}
+
+.home-content h3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #0a0a0afb;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.3s;
+
+}
+
+.home-content p {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #0a0a0afb;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+
+}
+
+.home-content .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.home-content .btn-box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #0a0a0afb;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.9s;
+    z-index: 2;
+
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: rgb(207, 178, 13);
+    border: 2px solid rgb(207, 178, 13);
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover{
+    color: rgb(207, 178, 13);
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: rgb(207, 178, 13);
+}
+
+.btn-box a:nth-child(2):hover{
+    color: #081b29;
+}
+
+.btn-box a:nth-child(2)::before {
+    background: rgb(207, 178, 13);
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+
+}
+
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #0a0a0afb;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.5s;
+    z-index: 2;
+
+}
+
+
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(207, 178, 13);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(207, 178, 13);
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a:hover{
+    color: #081b29;
+}
+
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(207, 178, 13);
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before{
+    width: 100%;
+}
+
+/* KEY FRAMES ANIMATION*/
+@keyframes showRight {
+    100%{
+        width: 0;
+    }
+}
+
+
+/* ESTILO ESPECIALIDADES */
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.especialidades .especialidades-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    margin-top: 45px;
+    transition: .2s;
+
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff83;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 70px;
+    color: rgb(207, 178, 13);
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+
+
+/* ESTILO SOBRE */
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.img-sobre .flex{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: rgb(207, 178, 13);
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+/* ESTILO DO PROJETO */
+section.projeto{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1f;
+}
+
+section.projeto .flex{
+    justify-content: space-around;
+}
+
+.img-proje{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 25% 50%;
+}
+
+.img-proje:hover{
+    background-position: 100% 100%;
+}
